@@ -82,10 +82,20 @@ a:hover {
     text-decoration: underline;
 }
 
+.profil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1em;
+}
+
 .social-buttons {
     display: flex;
     gap: 1em;
     margin-top: 1em;
+    justify-content: center;
 }
 
 .button {
