@@ -28,6 +28,11 @@ h2 {
     margin-bottom: 1em;
 }
 
+h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -41,26 +46,6 @@ ul li ul {
     margin-top: 0.5em;
     padding-left: 1em;
     list-style: disc;
-}
-
-blockquote {
-    background-color: #f9f9f9;
-    border-left: 10px solid #4CAF50;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote p {
-    display: inline;
-    font-style: italic;
-}
-
-blockquote cite {
-    display: block;
-    text-align: right;
-    font-size: 0.9em;
-    margin-top: 0.5em;
 }
 
 footer {
@@ -95,6 +80,21 @@ a:hover {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+}
+
+.lahan-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.lahan-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .social-buttons {
