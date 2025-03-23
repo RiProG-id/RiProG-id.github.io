@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --text-color: #e3e3e3;
+  --background-color: #101010;
+  --primary-color: #ff5503;
+  --input-background: #2c2c2c;
+  --button-background: #ff5503;
+  --button-hover: #e44e2d;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.chat-wrapper {
+  background: #1e1e1e;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.header .title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 3vw;
+  background: var(--input-background);
+  position: relative;
+  max-width: 70%;
+  margin: 0.5rem 0;
+}
+
+.message.outgoing {
+  align-self: flex-end;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.message.incoming {
+  align-self: flex-start;
+}
+
+.typing-area {
+  background: var(--input-background);
+  padding: 2vw;
+  border-radius: 3vw;
+  border-top: 1px solid var(--input-background);
+}
+
+.typing-form {
+  display: flex;
+  align-items: center;
+  border-radius: 3vw;
+}
+
+.typing-input {
+  flex-grow: 1;
+  border: none;
+  padding: 1vw;
+  border-radius: 3vw;
+  background: var(--input-background);
+  color: var(--text-color);
+}
+
+.typing-input::placeholder {
+  color: #a6a6a6;
+}
+
+.send-button {
+  border: none;
+  background: var(--button-background);
+  color: #fff;
+  padding: 2vw 4vw ;
+  border-radius: 5vw;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background: var(--button-hover);
+}
