@@ -1,105 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Petani Padi - Muhammad Rizki</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Portofolio Petani Padi</h1>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dijual Tanah Kavling - Jl. Pematang AMD</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .hero {
+        background-color: #2e8b57;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+      }
+      .hero h2 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        color: #343a40;
+      }
+      .price-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .price-card:hover {
+        transform: translateY(-10px);
+      }
+      .price-card .card-header {
+        background-color: #2e8b57;
+        color: white;
+        font-weight: 600;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .map-container img {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .note-section {
+        background-color: #fffbea;
+        border-left: 5px solid #facc15;
+        padding: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="hero">
+      <div class="container">
+        <h2>🟩 DIJUAL TANAH KAVLING 🟩</h2>
+      </div>
     </header>
 
-    <section id="profil">
-        <h2>Profil</h2>
-        <div class="profil-container">
-            <img src="img/profil.jpg" alt="Foto Profil Muhammad Rizki" class="profil-img">
+    <!-- Main Content -->
+    <main class="container my-5">
+      <section id="info" class="text-center">
+        <h1>Lokasi: Jl. Pematang AMD</h1>
+        <p class="lead">
+          Jalan sedang dibangun 🚧 — lokasi strategis dan prospek cerah untuk
+          investasi atau tempat tinggal!
+        </p>
+      </section>
+
+      <section id="pricing" class="my-5">
+        <div class="row text-center">
+          <div class="col-lg-4 mb-4">
+            <div class="card price-card h-100">
+              <div class="card-header py-3">Depan</div>
+              <div class="card-body">
+                <p class="card-text">
+                  ➡️ Depan: <strong>50 jt-an</strong> (sisa 2 kavling)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card price-card h-100">
+              <div class="card-header py-3">Tengah</div>
+              <div class="card-body">
+                <p class="card-text">➡️ Tengah: <strong>40 jt-an</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card price-card h-100">
+              <div class="card-header py-3">Belakang</div>
+              <div class="card-body">
+                <p class="card-text">➡️ Belakang: <strong>37 jt-an</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p><strong>Nama:</strong> Muhammad Rizki</p>
-        <p><strong>Alamat:</strong> Desa Melayu Ulu, Kecamatan Martapura Timur, Kabupaten Banjar, Martapura Timur</p>
-        <p><strong>Kontak:</strong> 0831-4095-0951 | muhammadrizki01032003@gmail.com</p>
-        <p><strong>Profil Singkat:</strong> Muhammad Rizki adalah petani padi pemula dengan kurang dari 4 tahun berkiprah di bidang pertanian. Berkomitmen untuk menerapkan praktik pertanian berkelanjutan.</p>
-    </section>
+      </section>
 
-    <section id="pendidikan">
-        <h2>Latar Belakang Pendidikan</h2>
-        <ul>
-            <li><strong>Sekolah Menengah Kejuruan</strong> - SMKN 1 Martapura Timur (2021)</li>
-        </ul>
-    </section>
+      <section class="text-center my-4">
+        <p>Yang sudah ada nama = sudah ada ampun 😄</p>
+      </section>
 
-    <section id="pengalaman">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li><strong>Petani Padi Mandiri</strong> (2021 - sekarang)
-                <ul>
-                    <li>Mengelola lahan pertanian seluas 15 borong di Desa Melayu Ulu.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+      <section class="note-section my-5 text-center">
+        <p>
+          Bagi yang serius, nanti diarahkan langsung ke
+          <strong>pemilik tanah</strong> untuk survei lokasi 📍
+        </p>
+        <a
+          href="https://wa.me/6285350512449?text=Halo%20min%2C%20saya%20lihat%20iklan%20tanah%20kavling%20di%20Jl.%20Pematang%20AMD%20melalui%20website%20https%3A%2F%2Friprog-id.github.io%2F.%20Saya%20tertarik%20dan%20ingin%20tanya%20lebih%20lanjut%20tentang%20kavlingnya.%20Terima%20kasih.%20🙏"
+          class="btn btn-success btn-lg mt-3"
+        >
+          💬 Tanya via WhatsApp
+        </a>
+      </section>
 
-    <section id="pelatihan">
-        <h2>Pelatihan dan Workshop</h2>
-        <ul>
-            <li><strong>Sertifikat Pelatihan</strong> - Literasi Keuangan Lanjutan (2023)</li>
-            <li><strong>Sertifikat Pelatihan</strong> - Bisnis Motivation Pathway (2024)</li>
-            <li><strong>Sertifikat Pelatihan Start Up for Youth</strong> (2024)</li>
-        </ul>
-    </section>
-
-    <section id="datalahan">
-        <h2>Data Lahan 2024</h2>
-        <h3>Alat dan Bahan</h3>
-        <ul>
-            <li>Baskom</li>
-            <li>Karung</li>
-            <li>Parang</li>
-            <li>Asak</li>
-        </ul>
-        
-        <h3>Bibit (Fase 1) / Gagal Panen</h3>
-        <ul>
-            <li>Siam Sari (Lokal) - 10 Liter</li>
-            <li>Mekongga (Unggul) - 5 Liter</li>
-        </ul>
-
-        <h3>Bibit (Fase 2) / Masih Menunggu Panen</h3>
-        <ul>
-            <li>Siam R Madu (Unggul) - 10 Liter</li>
-        </ul>
-
-        <h3>Perkiraan Lahan</h3>
-        <p>Luas lahan: 250 m² (terbagi di 3 tempat)</p>
-
-        <h3>Rencana Alat Tambahan untuk Panen</h3>
-        <ul>
-            <li>Karung</li>
-            <li>Ani-ani (Ranggaman)</li>
-        </ul>
-        
-        <h3>Foto Lahan</h3>
-        <div class="lahan-container">
-            <img src="img/lahan1.jpg" alt="Foto Lahan 1" class="lahan-img">
-            <img src="img/lahan2.jpg" alt="Foto Lahan 2" class="lahan-img">
+      <section id="map" class="my-5">
+        <h3 class="section-title">📍 Denah Kavling</h3>
+        <div class="text-center map-container">
+          <img src="denah.jpg" alt="Denah Tanah Kavling" />
         </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="kontak">
-        <h2>Kontak dan Media Sosial</h2>
-        <ul>
-            <li><strong>WhatsApp:</strong> 0831-4095-0951</li>
-            <li><strong>Email:</strong> muhammadrizki01032003@gmail.com</li>
-        </ul>
-        <div class="social-buttons">
-            <a href="https://www.instagram.com/muhammadrizki" target="_blank" class="button instagram">Instagram</a>
-            <a href="https://www.facebook.com/muhammadrizki" target="_blank" class="button facebook">Facebook</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 RiProG-id.</p>
+    <footer class="py-4 bg-light">
+      <div class="container text-center">
+        <p class="mb-0 text-muted">© 2025 Tanah Kavling Jl. Pematang AMD</p>
+      </div>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
